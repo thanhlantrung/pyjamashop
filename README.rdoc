@@ -3,5 +3,4 @@
 My name is Thanh and this is a testapp so I can learn how to use Ruby and Git.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
