@@ -37,8 +37,9 @@ nav ul li {
 	letter-spacing: .3em;
 }
 
-nav ul li:hover {
-	color: gray;
+nav ul li a:hover {
+	color: white;
+	text-decoration: none;
 }
 
 footer {
@@ -57,6 +58,7 @@ footer p {
 	margin: 0 auto;
 	display: block;
 }
+
 
 
 
