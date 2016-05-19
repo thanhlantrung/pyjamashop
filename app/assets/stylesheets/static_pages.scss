@@ -1,8 +1,7 @@
 h1 {
 	color: #CB79E8;
-	font-family: Arial, serif;
-	text-align: center;
 	font-family: Garamond;
+	text-align: center;
 	font-size: 5em;
 }
 
@@ -12,6 +11,12 @@ h2 {
 	font-family: Helvetica;
 	font-size: 1.5em;
 	font-style: italic;
+}
+
+h3 {
+	color: #79CCE8;
+	font-family: Helvetica;
+	text-align: center;
 }
 
 p {
@@ -60,6 +65,8 @@ footer p {
 	display: block;
 }
 
-
+#product-row {
+	margin: 0 auto;
+}
 
 
