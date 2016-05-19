@@ -1,13 +1,6 @@
 <table>
   <thead>
     <h1>Pyjamas</h1>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th>Color</th>
-      <th colspan="3"></th>
-    </tr>
   </thead>
 
   <tbody>
@@ -18,9 +11,10 @@
             <% @products.each do |product| %>
               <div class="col-sm-2 col-md-4">
               <%= image_tag(product.image_url, class: "img-responsive") %>
-              <h1><%= product.name %></h1>
+              <strong><%= product.name %></strong>
               <p><%= product.description %></p>
               <p><%= product.color %></p>
+              <p><%= product.price %></p>
               </div><!--/col-->
             <% end %>
           </div>
