@@ -11,8 +11,22 @@
   </thead>
 
   <tbody>
-    <% @products.each do |product| %>
+    
       <tr>
+        <div class="container-fluid">
+          <div class="row">
+            <% @products.each do |product| %>
+              <div class="col-sm-2 col-md-4">
+              <%= image_tag(product.image_url, class: "img-responsive") %>
+              <h1><%= product.name %></h1>
+              <p><%= product.description %></p>
+              <p><%= product.color %></p>
+              </div><!--/col-->
+            <% end %>
+          </div>
+        </div>
+
+
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
