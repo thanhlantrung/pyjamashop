@@ -1,8 +1,22 @@
 h1 {
 	color: #CB79E8;
-	font-family: Garamond;
+	font-family: Helvetica;
 	text-align: center;
-	font-size: 5em;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+}
+
+.pyjama-shop {
+	color: #CB79E8;
+	font-family: Garamond;
+	font-weight: bold;
+	margin-right: 60px;
+	float: left;
+	font-size: 1.5em;
+}
+.pyjama-shop a:hover {
+	color: #CB79E8;
 }
 
 h2 {
@@ -29,25 +43,25 @@ p {
 }
 
 nav {
-	background-color: #79CCE8;
+	background-color: white;
 	width: 100%;
 }
 
 
 nav ul li {
-	color: white;
+	color: grey;
 	font-family: Helvetica;
 	text-transform: uppercase;
-	font-weight: bold;
 	display: inline-block;
 	padding: 10px 10px 10px 10px;
 	letter-spacing: .3em;
+	float: right;
 }
 
 nav ul li a:hover {
-	color: white;
+	color: #79CCE8;
 	text-decoration: none;
-	background-color: #79CCE8;
+	
 }
 
 footer {
@@ -56,8 +70,10 @@ footer {
 footer p {
 	color: #79CCE8;
 	bottom: 0px;
-	font-family: Helvetica;
+	font-family: Garamond;
 	position: fixed;
+	margin: 0 auto;
+	text-align: center;
 	width: 100%
 }
 

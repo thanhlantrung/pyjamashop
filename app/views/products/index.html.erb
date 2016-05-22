@@ -5,7 +5,7 @@
 
   <tbody>
 
-  <p class="new-product"><%= link_to 'New Product', new_product_path %></p>
+  
       <tr>
         <div class="container-fluid">
           <div class="row" id="product-row">
@@ -23,6 +23,8 @@
             <% end %>
           </div>
         </div> 
+      <p class="new-product"><%= link_to 'New Product', new_product_path %></p>
+      <%= link_to 'Back', products_path %>
 
 <!--
 <table>
