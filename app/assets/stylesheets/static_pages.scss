@@ -2,9 +2,9 @@ h1 {
 	color: #4D7EB0;
 	font-family: Helvetica;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.5em;
 	text-transform: uppercase;
-	letter-spacing: .3em;
+	letter-spacing: .1em;
 }
 
 .pyjama-shop {
@@ -13,14 +13,14 @@ h1 {
 	font-weight: bold;
 	margin-right: 60px;
 	float: left;
-	font-size: 1.5em;
+	font-size: 1.8em;
 }
 
 
 h2 {
 	color: gray;
 	text-align: center;
-	font-family: Helvetica;
+	font-family: Garamond;
 	font-size: 1.5em;
 	font-style: italic;
 }
@@ -36,7 +36,7 @@ h3 {
 p {
 	color: gray;
 	text-align: center;
-	font-family: Helvetica;
+	font-family: Garamond;
 	font-size: 1.2em;
 }
 
@@ -51,7 +51,7 @@ nav ul li {
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 10px 10px 10px 10px;
-	letter-spacing: .3em;
+	letter-spacing: .2em;
 	float: right;
 }
 
@@ -103,3 +103,105 @@ footer p {
 	width: 70%;
 	margin: 0 auto;
 }
+
+.sale-div, {
+	background-color: #f0f4f8;
+	margin-bottom: 20px;
+
+}
+
+.sale-now {
+	font-family: Helvetica;
+	font-size: 1.7em;
+	color: #4D7EB0;
+}
+
+.sale-price {
+	font-family: Helvetica;
+	font-size: 2.4em;
+	font-style: bold;
+	color: #4D7EB0;
+}
+
+.about-div {
+	background-image: url("https://mmletloose.files.wordpress.com/2011/11/dsc06320.jpg"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+.about-div p {
+	font-family: Helvetica;
+	font-size: 2.4em;
+	font-style: bold;
+	color: #4D7EB0;
+}
+
+.contact-div {
+	background-image: url("http://media-2.web.britannica.com/eb-media/20/148420-004-ECA862D8.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+.contact-div p {
+	font-family: Helvetica;
+	font-size: 2.4em;
+	font-style: bold;
+	color: #4D7EB0;
+}
+
+.promo-div, {
+	background-color: #f0f4f8;
+	margin-bottom: 20px;
+
+}
+
+.promo-25off {
+	font-family: Garamond;
+	font-size: 6em;
+	font-style: bold;
+	color: #B04DAF;
+	text-transform: uppercase;
+	letter-spacing: .8px;
+
+}
+
+.promo-all {
+	font-family: Garamond;
+	font-size: 4em;
+	font-style: bold;
+	color: #B04DAF;
+	text-transform: uppercase;
+	letter-spacing: .8px;
+}
+
+.shop-button {
+	text-align: center;
+	margin: 0 auto;
+	border: none;
+}
+.shop {
+	border: none;
+	background-color: #CFDBE6;
+	font-family: Helvetica;
+	margin-top: 5px;
+	padding: 5px 25px 5px 25px;
+	
+}
+.shop a {
+	letter-spacing: .1em;
+	color: black;
+}
+.shop a:hover {
+	letter-spacing: .1em;
+	color: #4D7EB0;
+	text-decoration: none;
+}
+
+.mtop10 {
+	margin-top: 10px;
+}
+

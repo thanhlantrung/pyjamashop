@@ -1,7 +1,9 @@
-<table>
+<!--<table>-->
   <thead>
-    <h1>Pyjamas</h1>
+ 
     <br>
+    <br>
+
   </thead>
 
   <tbody>
@@ -9,14 +11,23 @@
   
       <tr>
         <div class="container-fluid">
+          <div class="sale-div">
+          <br>
+          <br>
+            <p class="sale-now">- ends today -</p>
+          <br>
+            <p class="sale-price">25% off all pyjamas</p>
+          <br>
+          <br>
+
+        </div> 
+        <p class="new-product"><%= link_to 'New Product', new_product_path %></p>
           <div class="row" id="product-row">
-            <% @products.each do |product| %>
               <%= render @products %>
-            <% end %>
           </div>
         </div> 
-      <p class="new-product"><%= link_to 'New Product', new_product_path %></p>
-      <%= link_to 'Back', products_path %>
+      
+      
 
 <!--
 <table>
