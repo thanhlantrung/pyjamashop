@@ -111,14 +111,14 @@ footer p {
 }
 
 .sale-now {
-	font-family: Helvetica;
-	font-size: 1.7em;
+	font-family: Garamond;
+	font-size: 2.4em;
 	color: #4D7EB0;
 }
 
 .sale-price {
-	font-family: Helvetica;
-	font-size: 2.4em;
+	font-family: Garamond;
+	font-size: 4em;
 	font-style: bold;
 	color: #4D7EB0;
 }
@@ -131,11 +131,13 @@ footer p {
 
 }
 
-.about-div p {
-	font-family: Helvetica;
-	font-size: 2.4em;
+.about-div p,
+.contact-div p {
+	font-family: Garamond;
+	font-size: 3em;
 	font-style: bold;
-	color: #4D7EB0;
+	color: #f0f4f8;
+	letter-spacing: .8px;
 }
 
 .contact-div {
@@ -144,13 +146,6 @@ footer p {
 	background-repeat: no-repeat;
 	margin-bottom: 20px;
 
-}
-
-.contact-div p {
-	font-family: Helvetica;
-	font-size: 2.4em;
-	font-style: bold;
-	color: #4D7EB0;
 }
 
 .promo-div, {
