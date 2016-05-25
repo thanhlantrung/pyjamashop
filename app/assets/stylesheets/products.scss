@@ -27,11 +27,12 @@
 	color: black;
 }
 
-.p-product {
-	font-style: italic;
-}
-
 .featured-image {
 	margin: 0 auto;
 }
 
+.product-img {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+}

@@ -3,25 +3,24 @@
     <br>
     <br>
 
-  </thead>
+</thead>
 
-  <tbody>
-
-  
-      <tr>
-        <div class="container-fluid">
-          <div class="promo-div">
-          <br>
-          <br>
-            <p class="promo-25off">25% off</p>
-            <p class="promo-all">all pyjamas</p>
-            <div class="shop-button">
-            <button class="shop"><%= link_to 'SHOP', products_url %></button>
-            </div>
-          <br>
-          <br>
+<tbody>
+ 
+    <div class="container-fluid">
+      <div class="promo-div">
+        <br>
+        <br>
+        <p class="promo-25off">25% off</p>
+        <p class="promo-all">all pyjamas</p>
+        <div class="shop-button">
+          <button class="shop"><%= link_to 'SHOP', products_url %></button>
         </div>
-        <div>
+        <br>
+        <br>
+      </div>
+    <div>
+
 <h2>New in stock:</h2>
 <br>
 
@@ -36,16 +35,16 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner carousel-img" role="listbox">
   <% @products.each do |product| %>
     <div class="item<%= " active" if product == @products.first %>">
       <%= image_tag(product.image_url) %>
         <div class="carousel-caption">
           <%= product.name %>
         </div>
-          </div>
-      <% end %>
     </div>
+    <% end %>
+  </div>
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -59,3 +58,4 @@
 </div>
 <br>
 <br>
+</tbody>

@@ -73,11 +73,6 @@ nav ul li a:hover {
 	color: #4D7EB0;
 }
 
-
-
-footer {
-	width: 100%;
-}
 footer p {
 	color: #B04DAF;
 	bottom: 0px;
@@ -85,7 +80,7 @@ footer p {
 	position: fixed;
 	margin: 0 auto;
 	text-align: center;
-	width: 100%
+	width: 100%;
 }
 
 .banana-image {
@@ -97,6 +92,10 @@ footer p {
 .carousel {
 	width: 50%;
 	margin: 0 auto;
+}
+
+.carousel-img {
+	object-fit: cover;
 }
 
 .p-width {
@@ -198,5 +197,12 @@ footer p {
 
 .mtop10 {
 	margin-top: 10px;
+
 }
+
+.show-form p {
+	text-align: left;
+	color: grey;
+}
+
 
