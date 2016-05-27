@@ -74,13 +74,14 @@ nav ul li a:hover {
 }
 
 footer p {
+	position: relative;
 	color: #B04DAF;
-	bottom: 0px;
 	font-family: Garamond;
-	position: fixed;
-	margin: 0 auto;
 	text-align: center;
+	bottom: 0;
 	width: 100%;
+	margin-top: 5px;
+
 }
 
 .banana-image {
@@ -90,12 +91,8 @@ footer p {
 }
 
 .carousel {
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
-}
-
-.carousel-img {
-	object-fit: cover;
 }
 
 .p-width {
@@ -182,6 +179,7 @@ footer p {
 	background-color: #CFDBE6;
 	font-family: Helvetica;
 	margin-top: 5px;
+	margin-bottom: 15px;
 	padding: 5px 25px 5px 25px;
 	
 }
@@ -205,4 +203,7 @@ footer p {
 	color: grey;
 }
 
+.clear {
+	clear: both;
+}
 
