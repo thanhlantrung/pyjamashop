@@ -224,3 +224,27 @@ footer p {
 	height: 400px;
 }
 
+#contact-row {
+	margin-top: 40px;
+}
+
+#submit-msg {
+	border:none;
+	background-color: #CFDBE6;
+	font-family: Helvetica;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	padding: 5px 25px 5px 25px;
+	letter-spacing: .1em;
+	color: black;
+	text-transform: uppercase;
+}
+
+#submit-msg:hover {
+	color: #4D7EB0;
+}
+
+#search-form,
+#find {
+	margin-top: 10px;
+}

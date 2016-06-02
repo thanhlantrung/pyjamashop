@@ -1,18 +1,36 @@
 <head>
-	<br>
-	<br>
+	<div class="clear"></div>
 </head>
-<div class="container-fluid">
+<div class="container-fluid" id="contact-div">
 	<div class="contact-div">
-	<br>
-	<br>
-	<br>
-	<p>contact</p>
-	<br>
-	<br>
-	<br>
+		<div class="clear"></div>
+		<div class="clear"></div>
+		<p>contact</p>
+		<br>
+		<br>
+		<br>
 	</div>
 </div>
-<br>
 <p class="p-width">Any questions?</p>
-<p class="p-width">Contact us at hello[at]thepyjamashop.com</p>
+<p class="p-width">Just send us a message using the form below!</p>
+<div class="clear"></div>
+
+<%= form_tag ("/static_pages/index")do %>
+<div class="row" id="contact-row">
+<div class='col-md-6'>
+  <div class="form-group">
+    <%= text_field_tag :name, nil, class: "form-control", placeholder: "Name" %>
+  </div>
+  <div class="form-group">
+  	<%= text_field_tag :email, nil, class: "form-control", placeholder: "Email" %>
+  </div>
+  <div class="form-group">
+    <%= text_area_tag :message, nil, class: "form-control", placeholder: "Message" %>
+  </div>
+  
+  <div class="actions">
+    <%= submit_tag "Send", :id => "submit-msg" %>
+  </div>
+</div>
+<% end %>
+</div>
