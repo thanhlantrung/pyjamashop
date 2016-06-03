@@ -59,7 +59,7 @@ nav ul li {
 	font-family: Helvetica;
 	text-transform: uppercase;
 	display: inline-block;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 10px 2px 10px;
 	letter-spacing: .2em;
 	float: right;
 }
@@ -242,9 +242,25 @@ footer p {
 
 #submit-msg:hover {
 	color: #4D7EB0;
+	text-decoration: none;
 }
 
-#search-form,
-#find {
-	margin-top: 10px;
+
+
+.input-group {
+	position: relative;
+	width: 270px;
+	float: right;
+	margin-right: 14px;
+	margin-top: 0;
+	margin-bottom: 18px;
+
+}
+
+.btn {
+	background-color: #CFDBE6;
+}
+
+.glyphicon:hover {
+	color: #4D7EB0;	
 }

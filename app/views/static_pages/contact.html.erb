@@ -15,7 +15,7 @@
 <p class="p-width">Just send us a message using the form below!</p>
 <div class="clear"></div>
 
-<%= form_tag ("/static_pages/index")do %>
+
 <div class="row" id="contact-row">
 <div class='col-md-6'>
   <div class="form-group">
@@ -29,8 +29,7 @@
   </div>
   
   <div class="actions">
-    <%= submit_tag "Send", :id => "submit-msg" %>
+    <%= link_to "Send", about_url, :id => "submit-msg" %>
   </div>
 </div>
-<% end %>
 </div>
