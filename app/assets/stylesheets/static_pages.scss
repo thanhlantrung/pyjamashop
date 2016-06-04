@@ -153,12 +153,14 @@ footer p {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-bottom: 20px;
+	margin-top: 40px;
 
 }
 
 .promo-div, {
 	background-color: #f0f4f8;
 	margin-bottom: 20px;
+	margin-top: 40px;
 
 }
 
@@ -263,4 +265,9 @@ footer p {
 
 .glyphicon:hover {
 	color: #4D7EB0;	
+}
+
+.panel-body {
+	margin-top: 40px;
+	border: none;
 }
