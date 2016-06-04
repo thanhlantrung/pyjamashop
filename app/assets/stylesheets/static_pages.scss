@@ -227,7 +227,9 @@ footer p {
 }
 
 #contact-row {
-	margin-top: 40px;
+	padding-top: 40px;
+	width: 60%;
+	margin: 0 auto;
 }
 
 #submit-msg {
@@ -267,7 +269,16 @@ footer p {
 	color: #4D7EB0;	
 }
 
-.panel-body {
-	margin-top: 40px;
+.panel {
 	border: none;
+	padding-top: 140px;
+	margin: auto;
+	width: 60%;
+}
+
+.panel-body {
+	border: none;
+	background-color: #CFDBE6;
+	color: black;
+
 }

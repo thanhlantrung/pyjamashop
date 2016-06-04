@@ -19,7 +19,6 @@
 
 <%= form_tag("/static_pages/thank_you") do %>
 <div class="row" id="contact-row">
-<div class='col-md-6'>
   <div class="form-group">
     <%= text_field_tag :name, nil, class: "form-control", placeholder: "Name" %>
   </div>
@@ -34,5 +33,4 @@
     <%= submit_tag "Send", :id => "submit-msg" %>
   </div>
   <% end %>
-</div>
 </div>
