@@ -1,24 +1,25 @@
-<!--<table>-->
-  <thead>
- 
-    <br>
-    <br>
+<%= form_tag("/products", method: "get") do %>
+  <div id="custom-search-input">
+    <div class="input-group">
+      <%= text_field_tag :q, '', class: 'search-query form-control', placeholder: 'Search' %>
+      <div class="input-group-btn">
+        <%= button_tag(:type => 'submit', :class => 'btn') do %>
+           <i class="glyphicon glyphicon-search"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>    
+<% end %>
 
-  </thead>
+<div class='clear'></div>
 
-  <tbody>
-
-  
-      <tr>
         <div class="container-fluid">
           <div class="sale-div">
-          <br>
-          <br>
+         
             <p class="sale-now">- ends today -</p>
-          <br>
+         
             <p class="sale-price">25% off all pyjamas</p>
-          <br>
-          <br>
+        
 
         </div> 
         <p class="new-product"><%= link_to 'New Product', new_product_path %></p>
