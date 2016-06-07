@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
   def index
     if params[:q]
     search_term = params[:q]
-    like_operator = !Rails.env.production? ? 'ilike' : 'like'
+    like_operator = Rails.env.production? ? 'ilike' : 'like'
     @products = Product.where("name #{like_operator} ?", "%#{search_term}%")
     #return our filtered list here
   else
