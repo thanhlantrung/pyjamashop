@@ -82,6 +82,12 @@ nav {
 
 }
 
+.navbar-toggle {
+	background-color: #CFDBE6;
+	border: none;
+}
+
+
 .container {
 	background-color: white;
 }
@@ -253,7 +259,10 @@ footer p {
 	margin: 0 auto;
 }
 
-#submit-msg {
+#submit-msg,
+#log-in,
+#sign-up,
+#password-reset {
 	border:none;
 	background-color: #CFDBE6;
 	font-family: Helvetica;
@@ -265,7 +274,10 @@ footer p {
 	text-transform: uppercase;
 }
 
-#submit-msg:hover {
+#submit-msg:hover,
+#log-in:hover,
+#sign-up:hover,
+#password-reset:hover {
 	color: #4D7EB0;
 	text-decoration: none;
 }
@@ -308,4 +320,29 @@ footer p {
 	color: gray;
 	font-family: Garamond;
 	font-size: 1.2em;
+}
+
+.field {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #4D7EB0;
+	font-family: Helvetica;
+	font-weight: normal;
+}
+
+.actions {
+	border: none;
+	font-family: Helvetica;
+	
+}
+
+.devise-links {
+	text-align: left;
+	color: grey;
+}
+
+.devise-links a:hover {
+	background-color: white;
+	text-decoration: none;
+	color: black;
 }
