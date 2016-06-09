@@ -1,3 +1,29 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.field {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #4D7EB0;
+	font-family: Helvetica;
+	font-weight: normal;
+}
+
+.actions {
+	border: none;
+	font-family: Helvetica;
+	
+}
+
+.devise-links {
+	text-align: left;
+	color: grey;
+}
+
+.devise-links a:hover {
+	background-color: white;
+	text-decoration: none;
+	color: black;
+}
