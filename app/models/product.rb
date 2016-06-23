@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
 	has_many :comments
+	validates :name, presence: true
 
 
 	def average_rating
