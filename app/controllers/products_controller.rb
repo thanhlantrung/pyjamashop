@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
     @products = Product.where("name #{like_operator} ?", "%#{search_term}%")
     #return our filtered list here
   else
-    @products = Product.all
+    @products = Product.all.paginate(:page => params[:page], :per_page => 10)
   end
 
 end
@@ -19,7 +19,7 @@ end
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.order("created_at DESC")
+    @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 3)
   end
 
   # GET /products/new
