@@ -10,9 +10,9 @@ class ProductsController < ApplicationController
     @products = Product.where("name #{like_operator} ?", "%#{search_term}%")
     #return our filtered list here
   else
-    @products = Product.all.paginate(:page => params[:page], :per_page => 10)
+    @products = Product.all
   end
-
+    @products = @products.paginate(:page => params[:page], :per_page => 12)
 end
 
 

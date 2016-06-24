@@ -16,8 +16,10 @@
    
     
     </div>
-   
+    
   </div> 
+  <div class="paginate"><%= will_paginate @comments %></div>
+  <div class="clear"></div>
  <div class="row mtop20">
   <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'Back', products_path %>
