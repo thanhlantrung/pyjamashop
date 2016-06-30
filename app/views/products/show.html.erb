@@ -6,7 +6,7 @@
       <p class="product-p"><%= @product.description %></p>
   <%= image_tag(@product.image_url, class: "img-responsive product-show") %>
       <p class="product-p">colour: <%= @product.color %></p>
-    <p class="product-p">$ <%= @product.price %></p>
+    <p class="product-p"><%= number_to_currency(@product.price, precision: 0)%></p>
     <p>Average Rating: 
     <div class="rated overall-rating" data-score="<%= @product.average_rating %>"></div></p>
     </div>
