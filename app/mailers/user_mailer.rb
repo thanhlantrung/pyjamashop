@@ -8,7 +8,7 @@ class UserMailer < ApplicationMailer
 			:subject => "A new contact form message from #{name}")
 	end
 
-	def welcome_email(user)
+	def welcome(user)
 		@user = user
 		@url = 'http://thepyjamashop.herokuapp.com/sign_up'
 		mail(to: @user.email, subject: 'Welcome to The Pyjama Shop')
