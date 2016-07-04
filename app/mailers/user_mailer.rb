@@ -10,7 +10,6 @@ class UserMailer < ApplicationMailer
 
 	def welcome(user)
 		@user = user
-		@url = 'http://thepyjamashop.herokuapp.com/sign_up'
 		mail(to: @user.email, subject: 'Welcome to The Pyjama Shop')
 	end
 end

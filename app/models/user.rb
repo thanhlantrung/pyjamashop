@@ -6,10 +6,10 @@ class User < ActiveRecord::Base
 	has_many :orders
 
 
-after_create :send_welcome
+after_create :send_welcome_mail
 
 private
-	def send_welcome
+	def send_welcome_mail
 		UserMailer.welcome(self).deliver_now
 	end
 end
