@@ -12,11 +12,12 @@
   </thead>
 
   <tbody>
+  <% if signed_in? && current_user.admin? %>
     <% @users.each do |user| %>
       <tr>
         <td><%= user.first_name %></td>
         <td><%= user.last_name %></td>
-         <% if signed_in? && current_user.admin? %>
+
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
