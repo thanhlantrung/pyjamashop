@@ -76,4 +76,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # inside config/production.rb
+  config.action_mailer.default_url_options = { :host => 'thepyjamashop.herokuapp.com' }
+  
+  # inside config/test.rb
+  config.action_mailer.default_url_options = {:host => "localhost:3000"}
 end
