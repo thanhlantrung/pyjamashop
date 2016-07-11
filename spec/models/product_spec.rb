@@ -12,11 +12,11 @@ require 'rails_helper'
 			end 
 
 			it "returns the average rating of all comments" do
-			expect(@product.average_rating). to eq (3)
+				expect(@product.average_rating). to eq (3)
 			end
 			
-			"is not valid" do
-			expect(Product.new(description: "great pjs")).not_to be_valid
+			it "is not valid" do
+				expect(Product.new(description: "great pjs")).not_to be_valid
 			end
 		
 		end 
