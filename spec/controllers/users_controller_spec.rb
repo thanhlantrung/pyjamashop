@@ -3,6 +3,7 @@ require 'rails_helper'
 describe UsersController, :type => :controller do 
 	before do
 		@user =  User.create!(email: "test@email.com", password: "test123")
+		@usertwo = User.create!(email: "test2@email.com", password: "test123")
 	end
 
 	describe "GET #show" do
@@ -22,6 +23,20 @@ describe UsersController, :type => :controller do
 			it "redirects to login" do
 				get :show, id: @user.id
 				expect(response).to redirect_to(new_user_session_path)
+			end
+		end
+
+		context "User is logged in" do
+			before do
+				sign_in @usertwo
+			end
+
+			context "Incorrect user" do
+				it "redirects to login" do
+					get :show, id: @user.id
+					expect(assigns(:user)).not_to eq @usertwo
+					expect(response).to redirect_to(root_path)
+				end
 			end
 		end
 	end
