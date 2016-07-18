@@ -15,12 +15,14 @@ sequence(:email) { |n| 'user#{n}@email.com' }
 		first_name 'Admin'
 		last_name 'User'
 
-	factory :user do 
-		email
-		password 'test123'
-		first_name 'Jenny'
-		last_name 'Smith'
-		admin false
 	end
+
+	#factory :user do 
+	#	email
+	#	password 'test123'
+	#	first_name 'Jenny'
+	#	last_name 'Smith'
+	#	admin false
+	#end
 
 end

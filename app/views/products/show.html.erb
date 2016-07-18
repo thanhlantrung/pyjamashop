@@ -10,8 +10,13 @@
     <p>Average Rating: 
     <div class="rated overall-rating" data-score="<%= @product.average_rating %>"></div></p>
     </div>
+    <%= form_tag "/payments/create" do %>
+      <%= render partial: "shared/stripe_checkout_button" %>
+    <% end %>
+    
     <%= render partial: 'new_comment' %>
     <%= render partial: 'comments' %>
+
     
    
     
