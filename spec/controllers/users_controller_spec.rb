@@ -5,7 +5,7 @@ describe UsersController, :type => :controller do
 		#@user =  User.create!(email: "test@email.com", password: "test123")
 		@user = FactoryGirl.create(:user)
 		#@usertwo = User.create!(email: "test2@email.com", password: "test123")
-		@usertwo = FactoryGirl.create(:user)
+		@user_two = FactoryGirl.create(:user)
 	end
 
 	describe "GET #show" do
@@ -30,13 +30,13 @@ describe UsersController, :type => :controller do
 
 		context "User is logged in" do
 			before do
-				sign_in @usertwo
+				sign_in @user_two
 			end
 
 			context "Incorrect user" do
 				it "redirects to login" do
 					get :show, id: @user.id
-					expect(assigns(:user)).not_to eq @usertwo
+					expect(assigns(:user)).not_to eq @user_two
 					expect(response).to redirect_to(root_path)
 				end
 			end

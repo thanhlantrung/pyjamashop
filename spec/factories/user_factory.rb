@@ -17,12 +17,12 @@ sequence(:email) { |n| 'user#{n}@email.com' }
 
 	end
 
-	#factory :user do 
-	#	email
-	#	password 'test123'
-	#	first_name 'Jenny'
-	#	last_name 'Smith'
-	#	admin false
-	#end
+	factory :user_two, class: User do 
+		email
+		password 'test123'
+		first_name 'Jenny'
+		last_name 'Smith'
+		admin false
+	end
 
 end
