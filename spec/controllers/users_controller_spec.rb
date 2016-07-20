@@ -35,8 +35,8 @@ describe UsersController, :type => :controller do
 
 			context "Incorrect user" do
 				it "redirects to login" do
-					get :show, id: @user.id
-					expect(assigns(:user)).not_to eq @user_two
+					get :show, id: @user_two.id
+					expect(assigns(:user)).not_to eq @user
 					expect(response).to redirect_to(root_path)
 				end
 			end
