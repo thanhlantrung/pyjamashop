@@ -4,9 +4,11 @@ class PaymentsController < ApplicationController
   	@product = Product.find(params[:product_id])
   	@user = current_user
   	token = params[:stripeToken]
+    @price = params[:product_price]
+
   	begin
   		charge = Stripe::Charge.create(
-  			#:amount => @product.price
+  			# :amount => @product.price
         :amount => @price.to_i * 100,
   			:currency => "usd",
   			:source => token,
