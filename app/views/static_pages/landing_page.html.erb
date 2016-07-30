@@ -16,10 +16,12 @@
       </div>
    
 
-<h2>New in stock:</h2>
+
 <div class="clear"></div>
 
+<h4 class="worldwide">We deliver worldwide</h4>
 
+<div class="sale-carousel">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -34,7 +36,7 @@
   <div class="carousel-inner" role="listbox">
   <% @products.each do |product| %>
     <div class="item<%= " active" if product == @products.first %>">
-      <%= image_tag(product.image_url, size: "500x500") %>
+      <%= image_tag(product.image_url, size: "200x200") %>
         <div class="carousel-caption">
           <%= product.name %>
         </div>
@@ -51,6 +53,7 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
 </div>
 <div class="clear"></div>
 </div>
