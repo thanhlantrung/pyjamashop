@@ -1,7 +1,4 @@
-$(document).on('ready page:load', function(){
-	$('.img-zoom').elevateZoom(); //{ 	zoomWindowHeight: 100,
-								//	zoomWindowWidth: 100,
-								//});
+var refreshRating= function() {
 	$('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
 	$('.rated').raty({ path: '/assets', 
 	  readOnly: true,
@@ -9,5 +6,15 @@ $(document).on('ready page:load', function(){
 	  	return $(this).attr('data-score');
 	  }
     });
+};
+
+
+$(document).on('ready page:load', function(){
+	refreshRating();
+	$('.img-zoom').elevateZoom(); //{ 	zoomWindowHeight: 100,
+	
+								//	zoomWindowWidth: 100,
+								//});
+	
 });
 
