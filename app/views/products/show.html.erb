@@ -4,7 +4,7 @@
     <div class="col-md-12">
       <h1 class="product-name"><%= @product.name %></h1>
       <p class="product-p"><%= @product.description %></p>
-  <%= image_tag(@product.image_url, class: "img-responsive product-show") %>
+  <%= image_tag(@product.image_url, class: "img-responsive product-show img-zoom", data_zoom_image: @product.image_url) %>
       <p class="product-p">colour: <%= @product.color %></p>
     <p class="product-p"><%= number_to_currency(@product.price, precision: 0)%></p>
     <p>Average Rating: 
