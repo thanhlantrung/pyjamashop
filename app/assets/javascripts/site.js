@@ -9,12 +9,11 @@ var refreshRating= function() {
 };
 
 
-$(document).on('ready page:load', function(){
+$(document).on('turbolinks:load', function(){
 	refreshRating();
 	$('.img-zoom').elevateZoom(); //{ 	zoomWindowHeight: 100,
 	
 								//	zoomWindowWidth: 100,
 								//});
-	
 });
 
