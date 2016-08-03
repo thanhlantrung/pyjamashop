@@ -39,7 +39,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
-          <li><%= link_to '<span class="glyphicon glyphicon-edit"></span> Edit Profile'.html_safe, edit_user_path(current_user), class:'black' %></li>
+          <li class="edit-user"><%= link_to '<span class="glyphicon glyphicon-edit"></span> Edit Profile'.html_safe, edit_user_path(current_user), class:'black' %></li>
           <li><%= link_to'<span class="glyphicon glyphicon-log-out"></span> Logout'.html_safe, destroy_user_session_path, :method => :delete, style: "color:black" %></li>
         <% else %>
           <li><%= link_to '<span class="glyphicon glyphicon-user"></span> Sign Up'.html_safe, new_user_registration_path, style: "color:black" %><li/>

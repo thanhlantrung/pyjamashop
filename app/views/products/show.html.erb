@@ -2,8 +2,10 @@
 <div class= "container product-class">
   <div class="row">
     <div class="col-md-12">
+      <% cache @product do %>
       <h1 class="product-name"><%= @product.name %></h1>
       <p class="product-p"><%= @product.description %></p>
+      <% end %>
   <%= image_tag(@product.image_url, class: "img-responsive product-show img-zoom", data_zoom_image: @product.image_url) %>
       <p class="product-p">colour: <%= @product.color %></p>
     <p class="product-p"><%= number_to_currency(@product.price, precision: 0)%></p>

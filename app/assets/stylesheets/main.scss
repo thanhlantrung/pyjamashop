@@ -17,7 +17,6 @@ h1 {
 }
 
 
-
 h2 {
 	color: gray;
 	text-align: center;
@@ -38,7 +37,7 @@ h3 {
 p {
 	color: gray;
 	text-align: center;
-	font-family: Helvetica;
+	font-family: Perpetua;
 	font-size: 1.2em;
 }
 
@@ -106,4 +105,8 @@ footer p {
 
 label {
 	font-weight: normal !important;
+}
+
+.edit-user:hover {
+	color: grey;
 }
