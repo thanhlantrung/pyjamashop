@@ -9,6 +9,7 @@
 	color: #4D7EB0;
 	font-family: Helvetica;
 	font-size: 1em;
+
 }
 
 .actions {
@@ -18,7 +19,7 @@
 }
 
 .devise-links {
-	text-align: left;
+	text-align: center;
 	color: grey;
 }
 
@@ -26,4 +27,19 @@
 	background-color: white;
 	text-decoration: none;
 	color: black;
+}
+
+.sign-in {
+	font-family: Futura;
+	text-transform: uppercase;
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+
+.login {
+	text-align: center;
+}
+
+.login-field {
+	padding-bottom: 15px;
 }

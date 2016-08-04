@@ -22,7 +22,6 @@ h2 {
 	text-align: center;
 	font-family: Helvetica;
 	font-size: 1.5em;
-	font-style: italic;
 }
 
 h3 {
@@ -37,8 +36,10 @@ h3 {
 p {
 	color: gray;
 	text-align: center;
-	font-family: Perpetua;
-	font-size: 1.2em;
+	font-family: Helvetica;
+	font-size: 1em;
+	letter-spacing: .1em;
+	
 }
 
 nav {
@@ -88,7 +89,6 @@ nav {
 }
 
 
-
 footer {
 	position: absolute;
 	bottom: 0;
@@ -107,6 +107,3 @@ label {
 	font-weight: normal !important;
 }
 
-.edit-user:hover {
-	color: grey;
-}

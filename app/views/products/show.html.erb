@@ -5,12 +5,13 @@
       <% cache @product do %>
       <h1 class="product-name"><%= @product.name %></h1>
       <p class="product-p"><%= @product.description %></p>
-      <% end %>
+      
   <%= image_tag(@product.image_url, class: "img-responsive product-show img-zoom", data_zoom_image: @product.image_url) %>
       <p class="product-p">colour: <%= @product.color %></p>
     <p class="product-p"><%= number_to_currency(@product.price, precision: 0)%></p>
     <p>Average Rating: 
     <div class="rated overall-rating" data-score="<%= @product.average_rating %>"></div></p>
+    <% end %>
     </div>
     <div class="stripe-payment"><%= form_tag "/payments/create" do %>
       <%= render partial: "shared/stripe_checkout_button" %>

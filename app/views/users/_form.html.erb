@@ -10,16 +10,18 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<div class="login">
+  <div class="field login-field">
     <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
   </div>
-  <div class="field">
+  <div class="field login-field">
     <%= f.label :last_name %><br>
     <%= f.text_field :last_name %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Update", :id => "update-user" %>
+  </div>
   </div>
 <% end %>
+

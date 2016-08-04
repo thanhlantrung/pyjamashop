@@ -29,6 +29,11 @@
 .p-width {
 	width: 70%;
 	margin: 0 auto;
+
+}
+
+.about-text {
+	text-align: justify; 
 }
 
 .sale-div, {
@@ -54,21 +59,20 @@
 }
 
 .about-div {
-	background-image: url("https://mmletloose.files.wordpress.com/2011/11/dsc06320.jpg"); 
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url("https://weirdwonderfulvietnam.files.wordpress.com/2014/07/p1120259.jpg"); 
 	margin-bottom: 20px;
+	margin: 0 auto;
 
 }
 
-.about-div p,
+//.about-div p,
 .contact-div p {
 	font-family: Garamond;
 	font-size: 3em;
 	font-style: bold;
 	color: #f0f4f8;
 	letter-spacing: .8px;
-}
+}// 
 
 .contact-div {
 	background-image: url("http://media-2.web.britannica.com/eb-media/20/148420-004-ECA862D8.jpg");
@@ -166,7 +170,8 @@
 #submit-msg,
 #log-in,
 #sign-up,
-#password-reset {
+#password-reset,
+#update-user {
 	border:none;
 	background-color: #CFDBE6;
 	font-family: Helvetica;
@@ -181,7 +186,8 @@
 #submit-msg:hover,
 #log-in:hover,
 #sign-up:hover,
-#password-reset:hover {
+#password-reset:hover,
+#update-user:hover {
 	color: #4D7EB0;
 	text-decoration: none;
 }
@@ -226,5 +232,3 @@
 	font-family: Arial;
 	font-size: 1.2em;
 }
-
-
