@@ -5,7 +5,7 @@
 <div class="login">
   <div class="field login-field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true, class: "width300" %>
   </div>
 
   <div class="field login-field">
@@ -13,12 +13,12 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off", class: "width300" %>
   </div>
 
   <div class="field login-field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off", class: "width300" %>
   </div>
 
   <div class="actions">
