@@ -22,18 +22,18 @@
 <h4 class="worldwide">We deliver worldwide</h4>
 
 <div class="sale-carousel">
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
-  <ol class="carousel-indicators">
+ <!-- <ol class="carousel-indicators">
   <% @products.each do |product| %>
     <li data-target="#carousel-example-generic <%= " active" if product == @products.first %>"></li>
     <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-    <% end %>
+   <!-- <% end %>
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+  <!-- <div class="carousel-inner" role="listbox">
   <% @products.each do |product| %>
     <div class="item<%= " active" if product == @products.first %>">
       <%= image_tag(product.image_url, size: "200x200") %>
@@ -41,11 +41,11 @@
           <%= product.name %>
         </div>
     </div>
-    <% end %>
-  </div>
+    <% end %>-->
+  <!-- </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+ <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
@@ -54,6 +54,23 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div> -->
+<div class="container-fluid">
+  <div class="row" id="landing-images">
+    <div class="col-sm-1 col-md-3" class="limg">
+      <img src="https://q4gpng.bl3302.livefilestore.com/y3mViBhmKbK3QV3p6H2B2xe7x-BrTLlKA5Bd1CXk4PgfG2IYr-2-6AO76I05gfutPmcIzi_adozMjtecaaCS_djn6q-vTx9Kd0AU5Gt1Ai-UL6OgAt1dz91Z42L4HA3uquiVuZbLzykhA8UeHTnNieAgwrVTLOKS55dqpwOG_ncHDE?width=220&height=220&cropmode=none" class="l-img"> 
+    </div>
+    <div class="col-sm-1 col-md-3" class="limg">
+      <img src="https://n4gpng.bl3302.livefilestore.com/y3mqn1YlY2olR7Yf5Evf9Ko4AhGV2h7STAnd7ozAqRUoA91rwmyY2x25B1p3-SgfKTrdLR5rSskM9Mh7OMRmIwUmMOgXV0BEyxbfkqcuw6ZGxnQ7PhymLIkBeYcHT98aoMAx7x2c2EVulME2o03Af90Q_yEPkjgxZmh1J71laV8wwk?width=220&height=220&cropmode=none" class="l-img"> 
+    </div>
+
+    <div class="col-sm-1 col-md-3" class="limg">
+      <img src="https://pigpng.bl3302.livefilestore.com/y3m6Wel55DF7M5R2ezL_eePPT-3vLAoRBzu1bYl4w-DWFBBQYYAi95psvcxT3RShYzbPdTeRjXmyePxSXt2FeArD990Ips7GSjsVuO_r_5Bwhpo0BSXl8iubskHYVscZyJinzvn_92WjdUamsEG4Nhjak96nDjIsunSk6p0fsTEmiA?width=220&height=220&cropmode=none" class="l-img">
+    </div>
+    <div class="col-sm-1 col-md-3" class="limg">
+      <img src="https://oygpng.bl3302.livefilestore.com/y3mTU1xDt5k425CKQNbzP33ho0MRUzf9GKvpAifoooHj9I_7TGoPzMPlZzPRZ8E9xxxEce3jXD6oxpqxAFPlS2OdHtlpEhIlAxplarr8MmgZV3kg9XP2xUT5iG_-O_LAD0bskXX3MdAGeaxg88Ua8OoalsGQSpfzfVazv-GeHx4n6c?width=220&height=220&cropmode=none" class="l-img">
+    </div>
+  </div>
 </div>
 <div class="clear"></div>
 </div>
