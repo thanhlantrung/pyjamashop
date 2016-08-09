@@ -3,6 +3,7 @@
   <div class="row">
     <div class="col-md-12">
       <% cache @product do %>
+      <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
       <h1 class="product-name"><%= @product.name %></h1>
       <p class="product-p"><%= @product.description %></p>
       
@@ -19,7 +20,7 @@
     </div>
     <%= render partial: 'new_comment' %>
 
-    <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+    
     <%= render partial: 'comments' %>
 
     
