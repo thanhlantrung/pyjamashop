@@ -1,4 +1,4 @@
-<script
+<!-- <script
   src="https://checkout.stripe.com/checkout.js" class="stripe-button"
   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
   data-image="<%= @product.image_url %>"
@@ -6,6 +6,34 @@
   data-description="<%= @product.description %>"
   data-amount="<%= @product.price * 100 %>"
   data-currency="usd">
-</script>
+</script> -->
 
-<%= hidden_field_tag(:product_id, @product_id) %>
+
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+  <%= hidden_field_tag 'stripeToken' %>
+  <%= hidden_field_tag 'stripeEmail' %>
+  <button id="customButton" class="btn btn-large btn-default">Buy Now</button>
+
+  <script>
+    var handler = StripeCheckout.configure({
+      key: '<%= Rails.configuration.stripe[:publishable_key] %>',
+      token: function(token, args) { 
+        document.getElementById("stripeToken").value = token.id;
+        document.getElementById("stripeEmail").value = token.email;
+        document.getElementById("chargeForm").submit();
+      }
+    });
+
+    document.getElementById('customButton').addEventListener('click', function(e) { 
+      // Open Checkout with further options
+      handler.open({
+        name: '<%= @product.name %>',
+        description: '<%= @product.description %>',
+        amount: '<%= @product.price * 100 %>',
+        currency: 'usd',
+      });
+      e.preventDefault();
+    });
+  </script>
+
+<%= hidden_field_tag(:product_id, @product_id) %> 

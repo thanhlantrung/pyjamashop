@@ -2,7 +2,7 @@
 <div class= "container product-class">
   <div class="row" data-product-id="<%= @product.id %>">
     <div class="col-md-12">
-      <% cache @product do %>
+
       
       <h1 class="product-name"><%= @product.name %></h1>
       <p class="product-p"><%= @product.description %></p>
@@ -12,9 +12,9 @@
     <p class="product-p"><%= number_to_currency(@product.price, precision: 0)%></p>
     <p>Average Rating: 
     <div class="rated overall-rating" data-score="<%= @product.average_rating %>"></div></p>
-    <% end %>
+
     </div>
-    <div class="stripe-payment"><%= form_tag "/payments/create" do %>
+    <div class="stripe-payment"><%= form_tag "/payments/create", id: 'chargeForm' do %>
       <%= render partial: "shared/stripe_checkout_button" %>
     <% end %>
     </div>
