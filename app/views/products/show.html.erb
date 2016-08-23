@@ -1,38 +1,51 @@
 <p id="notice"><%= notice %></p>
 <div class= "container product-class">
   <div class="row" data-product-id="<%= @product.id %>">
-  <div class="my-p">
-    <div class="col-md-6">
+    <div class="col-md-6 my-p">
       <%= image_tag(@product.image_url, class: "img-responsive product-show img-zoom", data_zoom_image: @product.image_url) %>
     </div>
-    <div class="col-md-6">
-    <h1 class="product-name"><%= @product.name %></h1>
+    <div class="col-md-6 my-p">
+      <h1 class="product-name"><%= @product.name %></h1>
       <p class="product-p"><%= @product.description %></p>
-      
       <p class="product-p">colour: <%= @product.color %></p>
       <p class="product-p"><%= number_to_currency(@product.price, precision: 0)%></p>
-      <p>Average Rating: 
-      <div class="rated overall-rating" data-score="<%= @product.average_rating %>"></div></p>
-    
-    <div class="stripe-payment"><%= form_tag "/payments/create", id: 'chargeForm' do %>
-      <%= render partial: "shared/stripe_checkout_button" %>
-      <% end %>
-    </div>
-    
-    </div>
-  </div>  
-  </div>
+      <div class="stripe-payment"><%= form_tag "/payments/create", id: 'chargeForm' do %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %>
+      </div>
+      <p>Average Rating:<div class="rated overall-rating" data-score="<%= @product.average_rating %>"></div></p>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+              Read Reviews</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body"><%= render partial: 'comments' %><div class="paginate"><%= will_paginate @comments %></div></div>
+            
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+              Write Review</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body"> <%= render partial: 'new_comment' %>
+          <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div></div>
+          </div>
+        </div>
+      </div><!--end accordion-->
+    </div><!-- end col md 6 -->
+  </div><!-- end row --> 
+</div><!-- end container -->
   <hr>
-  <div class="col-md-6 review-div">
-  <%= render partial: 'comments' %>
-  </div>
-  <div class="col-md-6">
-  <%= render partial: 'new_comment' %>
-    <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-    
-  </div>
-</div> 
-<div class="paginate"><%= will_paginate @comments %></div>
+
+
 <div class="clear"></div>
 <div class="row mtop20">
   <%= link_to 'Edit', edit_product_path(@product) %> |
