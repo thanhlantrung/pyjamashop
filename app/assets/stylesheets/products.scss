@@ -1,7 +1,3 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 #product-row {
 	margin: 0 auto;
 
@@ -49,6 +45,7 @@
 	width: 50%;
 	margin: 0 auto;
 }
+
 .rated,
 .review-div {
 	margin: 0 auto;
@@ -64,7 +61,7 @@
 }
 
 .add-review {
-	font-family: Helvetica;
+	font-family: "Playfair Display";
 	text-transform: uppercase;
 	font-size: 1em;
 	letter-spacing: .2em;
@@ -89,4 +86,3 @@
 .stripe-payment {
 	text-align: center;
 }
-

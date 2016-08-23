@@ -21,13 +21,13 @@
             <p class="sale-price">25% off all pyjamas</p>
           
           </div> 
-          <!--<% if signed_in? && current_user.admin? %> -->
+          <% if signed_in? && current_user.admin? %>
           <p class="new-product"><%= link_to 'New Product', new_product_path %></p>
           <% end %>
           <div class="row" id="product-row">
           <% cache (cache_key_for_products) do %>
               <%= render @products %>
-         <!-- <% end %> -->
+              <% end %>
           </div>
         </div> 
 <div class="paginate"><%= will_paginate @products %></div>

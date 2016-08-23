@@ -9,37 +9,41 @@ body {
 
 h1 {
 	color: #4D7EB0;
-	font-family: Helvetica;
+	font-family: Dosis;
 	text-align: center;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 }
 
-
 h2 {
 	color: gray;
 	text-align: center;
-	font-family: Helvetica;
+	font-family: Dosis;
 	font-size: 1.5em;
 }
 
 h3 {
 	color: #BA227B;
-	font-family: Helvetica;
+	font-family: Dosis;
 	text-align: center;
 	font-size: 1.2em;
 	text-transform: uppercase;
 }
 
+a {
+	font-family: Dosis;
+}
 
+a:hover {
+	text-decoration: none;
+}
 p {
 	color: gray;
 	text-align: center;
-	font-family: Helvetica;
+	font-family: Dosis;
 	font-size: 1em;
-	letter-spacing: .1em;
-	
+	letter-spacing: .1em;	
 }
 
 nav {
@@ -47,9 +51,8 @@ nav {
 	width: 100%;
 }
 
-
 .navbar ul li {
-	font-family: Helvetica;
+	font-family: Dosis;
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 10px 10px 2px 10px;
@@ -80,14 +83,13 @@ nav {
 	border: none;
 }
 
-
 .container {
 	background-color: white;
 }
+
 .collapse, .navbar-collapse {
 	background-color: white;
 }
-
 
 footer {
 	position: absolute;
@@ -99,11 +101,10 @@ footer {
 
 footer p {
 	color: #BA227B;
-	font-family: Futura;
+	font-family: "Playfair Display";
 	margin-top: 20px;
 }
 
 label {
 	font-weight: normal !important;
 }
-

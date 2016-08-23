@@ -1,34 +1,30 @@
-
-
 #landing-images {
 	margin: 0 auto;
 }
 
-.l-img {
-	padding-top: 20px;
-	padding-bottom: 20px;	
-
+#landing-images img:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
 }
 
-
 .worldwide {
-	font-family: Helvetica;
+	font-family: Dosis;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.6em; 
 	padding-top: 10px;
 	padding-bottom: 10px;
+	letter-spacing: .8px;
 }
 
 #pyjama-shop a {
 	color: black;
-	font-family: Futura;
+	font-family: "Playfair Display";
 	font-weight: bold;
 	margin-right: 60px;
 	float: left;
 	font-size: 1.8em;
 }
-
 
 .carousel {
 	width: 20%;
@@ -38,7 +34,6 @@
 .p-width {
 	width: 70%;
 	margin: 0 auto;
-
 }
 
 .about-text {
@@ -48,11 +43,10 @@
 .sale-div, {
 	background-color: #f0f4f8;
 	margin-bottom: 20px;
-
 }
 
 .sale-now {
-	font-family: Futura;
+	font-family: "Playfair Display";
 	font-size: 2.4em;
 	color: #4D7EB0;
 	padding-top: 30px;
@@ -60,7 +54,7 @@
 }
 
 .sale-price {
-	font-family: Futura;
+	font-family: "Playfair Display";
 	font-size: 4em;
 	font-style: bold;
 	color: #4D7EB0;
@@ -71,19 +65,16 @@
 	background-image: url("https://weirdwonderfulvietnam.files.wordpress.com/2014/07/p1120259.jpg"); 
 	margin-bottom: 20px;
 	margin: 0 auto;
-
 }
-
 
 .promo-div, {
 	background-color: #f0f4f8;
 	margin-bottom: 20px;
 	margin-top: 40px;
-
 }
 
 .promo-25off {
-	font-family: Futura;
+	font-family: "Playfair Display";
 	font-size: 6em;
 	font-style: bold;
 	color: #BA227B;
@@ -91,11 +82,10 @@
 	letter-spacing: .8px;
 	padding-top: 15px;
 	padding-bottom: 5px;
-
 }
 
 .promo-all {
-	font-family: Futura;
+	font-family: "Playfair Display";
 	font-size: 4em;
 	font-style: bold;
 	color: #BA227B;;
@@ -109,19 +99,21 @@
 	border: none;
 	padding-top: 30px;
 }
+
 .shop {
 	border: none;
 	background-color: #CFDBE6;
-	font-family: Helvetica;
+	font-family: Dosis;
 	margin-top: 5px;
 	margin-bottom: 15px;
 	padding: 5px 25px 5px 25px;
-	
 }
+
 .shop a {
 	letter-spacing: .1em;
 	color: black;
 }
+
 .shop a:hover {
 	letter-spacing: .1em;
 	color: #4D7EB0;
@@ -166,7 +158,7 @@
 #update-user {
 	border:none;
 	background-color: #CFDBE6;
-	font-family: Helvetica;
+	font-family: Dosis;
 	margin-top: 5px;
 	margin-bottom: 15px;
 	padding: 5px 25px 5px 25px;
@@ -184,7 +176,6 @@
 	text-decoration: none;
 }
 
-
 .input-group {
 	position: relative;
 	width: 270px;
@@ -192,9 +183,7 @@
 	margin-right: 14px;
 	margin-top: 0;
 	margin-bottom: 18px;
-
 }
-
 
 .btn {
 	background-color: #CFDBE6;
@@ -215,12 +204,12 @@
 	border: none;
 	background-color: #CFDBE6;
 	color: black;
-
 }
 
 .search-query,
 .form-group {
 	color: gray;
-	font-family: Arial;
+	font-family: Dosis;
 	font-size: 1.2em;
+	text-transform: lowercase;
 }

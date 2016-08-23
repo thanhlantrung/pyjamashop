@@ -3,11 +3,13 @@
 <head>
   <title>The Pyjama Shop</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Playfair+Display" rel="stylesheet">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= action_cable_meta_tag %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -40,7 +42,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
-          <li class="edit-user"><%= link_to '<span class="glyphicon glyphicon-edit"></span> Edit Profile'.html_safe, edit_user_path(current_user), class:'black' %></li>
+          <li class="edit-user"><%= link_to '<span class="glyphicon glyphicon-edit"></span> Edit Profile'.html_safe, edit_user_path(current_user), class:'black', style: "color:black" %></li>
           <li><%= link_to'<span class="glyphicon glyphicon-log-out"></span> Sign Out'.html_safe, destroy_user_session_path, :method => :delete, style: "color:black" %></li>
         <% else %>
           <li><%= link_to '<span class="glyphicon glyphicon-user"></span> Sign Up'.html_safe, new_user_registration_path, style: "color:black" %><li/>

@@ -1,21 +1,14 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
 .field {
 	text-transform: uppercase;
 	letter-spacing: .2em;
 	color: #4D7EB0;
-	font-family: Helvetica;
+	font-family: Dosis;
 	font-size: 1em;
-
 }
 
 .actions {
 	border: none;
-	font-family: Helvetica;
-	
+	font-family: Dosis;
 }
 
 .devise-links {
@@ -30,7 +23,7 @@
 }
 
 .sign-in {
-	font-family: Futura;
+	font-family: "Playfair Display";
 	text-transform: uppercase;
 	padding-top: 80px;
 	padding-bottom: 20px;
