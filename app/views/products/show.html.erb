@@ -1,37 +1,40 @@
 <p id="notice"><%= notice %></p>
 <div class= "container product-class">
   <div class="row" data-product-id="<%= @product.id %>">
-    <div class="col-md-12">
-
-      
-      <h1 class="product-name"><%= @product.name %></h1>
+  <div class="my-p">
+    <div class="col-md-6">
+      <%= image_tag(@product.image_url, class: "img-responsive product-show img-zoom", data_zoom_image: @product.image_url) %>
+    </div>
+    <div class="col-md-6">
+    <h1 class="product-name"><%= @product.name %></h1>
       <p class="product-p"><%= @product.description %></p>
       
-  <%= image_tag(@product.image_url, class: "img-responsive product-show img-zoom", data_zoom_image: @product.image_url) %>
       <p class="product-p">colour: <%= @product.color %></p>
-    <p class="product-p"><%= number_to_currency(@product.price, precision: 0)%></p>
-    <p>Average Rating: 
-    <div class="rated overall-rating" data-score="<%= @product.average_rating %>"></div></p>
-
-    </div>
+      <p class="product-p"><%= number_to_currency(@product.price, precision: 0)%></p>
+      <p>Average Rating: 
+      <div class="rated overall-rating" data-score="<%= @product.average_rating %>"></div></p>
+    
     <div class="stripe-payment"><%= form_tag "/payments/create", id: 'chargeForm' do %>
       <%= render partial: "shared/stripe_checkout_button" %>
-    <% end %>
+      <% end %>
     </div>
-    <%= render partial: 'new_comment' %>
-
+    
+    </div>
+  </div>  
+  </div>
+  <hr>
+  <div class="col-md-6 review-div">
+  <%= render partial: 'comments' %>
+  </div>
+  <div class="col-md-6">
+  <%= render partial: 'new_comment' %>
     <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-    <%= render partial: 'comments' %>
-
     
-   
-    
-    </div>
-    
-  </div> 
-  <div class="paginate"><%= will_paginate @comments %></div>
-  <div class="clear"></div>
- <div class="row mtop20">
+  </div>
+</div> 
+<div class="paginate"><%= will_paginate @comments %></div>
+<div class="clear"></div>
+<div class="row mtop20">
   <%= link_to 'Edit', edit_product_path(@product) %> |
-    <%= link_to 'Back', products_path %>
+  <%= link_to 'Back', products_path %>
 </div>
