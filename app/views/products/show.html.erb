@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
   
   <div class= "container product-class">
+  <hr>
   <div class="row" data-product-id="<%= @product.id %>">
 
     <div class="col-md-6 my-p">
@@ -17,28 +18,33 @@
       </div>
       <p>Average Rating:<div class="rated overall-rating" data-score="<%= @product.average_rating %>"></div></p>
       <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
+        <div class="panel panel-default" >
+          <div class="panel-heading" id="read-reviews">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
               Read Reviews</a>
             </h4>
           </div>
-          <div id="collapse1" class="panel-collapse collapse in">
+          <div id="collapse1" class="panel-collapse collapse">
             <div class="panel-body"><%= render partial: 'comments' %><div class="paginate"><%= will_paginate @comments %></div></div>
 
           </div>
         </div>
+        <% if signed_in? %>
         <div class="panel panel-default">
-          <div class="panel-heading">
+          <div class="panel-heading" id="write-review">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
               Write Review</a>
             </h4>
           </div>
+          
           <div id="collapse2" class="panel-collapse collapse">
-            <div class="panel-body"> <%= render partial: 'new_comment' %>
-          <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div></div>
+            <div class="panel-body"> 
+              <%= render partial: 'new_comment' %>
+              <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+            </div>
+            <% end %>
           </div>
         </div>
       </div><!--end accordion-->

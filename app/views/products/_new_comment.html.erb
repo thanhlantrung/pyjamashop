@@ -1,5 +1,4 @@
 <div class="review-div">
-	<% if signed_in? %>
 	<div class="add-review-div"><h4 class="add-review">Add a review:</h4></div>
 	<%= form_for([@product, @product.comments.build], remote: true) do |f| %>
 		<p>
@@ -12,6 +11,5 @@
 		<p>
 			<%= f.submit "Submit", :id => "log-in" %>
 		</p>
-	<% end %>
 	<% end %>
 </div>

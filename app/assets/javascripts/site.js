@@ -11,6 +11,9 @@ var refreshRating= function() {
 
 $(document).on('turbolinks:load', function(){
 	refreshRating();
-	$('.img-zoom').elevateZoom(); 							
+	$('.img-zoom').elevateZoom({
+		borderSize: 2,
+		borderColour: "#CFDBE6",
+	}); 							
 });
 
