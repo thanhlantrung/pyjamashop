@@ -4,13 +4,12 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome to The Pyjama Shop, <%= @user.first_name %></h1>
+    <h1>Welcome to The Pyjama Shop!</h1>
     <p>
-      You have successfully signed up,
-      your username is: <%= @user.email %>.<br>
+      You have successfully signed up with the username: <%= @user.email %>.<br>
     </p>
     <p>
       To login to the site, just follow this link: <%= link_to 'Login', new_user_session_url %>.
     </p>
-    <p>Thanks for joining and have a great day!</p>
+    <p>Thanks for joining and enjoy shopping!</p>
   </body>
