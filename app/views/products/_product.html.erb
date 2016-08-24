@@ -4,7 +4,7 @@
     <%= link_to image_tag(product.image_url, class: "img-responsive product-img"), product %>
 
     <h3><%= product.name %></h3>
-    <p><%= product.description %></p>
+    <p><%= product.description.truncate_words(4) %></p>
     <p><%= product.color %></p>
               <p><%= number_to_currency(product.price, precision: 0) %></p>
 
