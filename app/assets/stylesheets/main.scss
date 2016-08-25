@@ -23,14 +23,6 @@ h2 {
 	font-size: 1.5em;
 }
 
-h3 {
-	color: #BA227B;
-	font-family: Dosis;
-	text-align: center;
-	font-size: 1.2em;
-	text-transform: uppercase;
-}
-
 a {
 	font-family: Dosis;
 }
@@ -38,6 +30,7 @@ a {
 a:hover {
 	text-decoration: none;
 }
+
 p {
 	color: gray;
 	text-align: center;
@@ -70,6 +63,15 @@ nav {
 
 #nav-links #pyjama-shop a {
 	color: black;
+}
+
+#pyjama-shop a {
+	color: black;
+	font-family: "Playfair Display";
+	font-weight: 700;
+	margin-right: 60px;
+	float: left;
+	font-size: 2em;
 }
 
 .navbar {

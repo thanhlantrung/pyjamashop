@@ -12,24 +12,21 @@
 <% end %>
 
 <div class='clear'></div>
-
-        <div class="container-fluid">
-          <div class="sale-div">
-          
-            <p class="sale-now">- ends today -</p>
-         
-            <p class="sale-price">25% off all pyjamas</p>
-          
-          </div> 
-          <% if signed_in? && current_user.admin? %>
-          <p class="new-product"><%= link_to 'New Product', new_product_path %></p>
-          <% end %>
-          <div class="row" id="product-row">
-              <%= render @products %>         
-          </div>
-        </div> 
+<div class="container-fluid">
+  <div class="sale-div">
+    <p class="sale-now">- ends today -</p>
+    <p class="sale-price">25% off all pyjamas</p>
+  </div> 
+  <hr>
+  <% if signed_in? && current_user.admin? %>
+  <p class="new-product"><%= link_to 'New Product', new_product_path %></p>
+  <% end %>
+  <div class="row" id="product-row">
+    <%= render @products %>         
+  </div>
+</div> 
 <div class="paginate"><%= will_paginate @products %></div>
-     
+<hr>    
 <!--
 <table>
   <thead>

@@ -1,19 +1,11 @@
-
-
-  <div class="col-sm-1 col-md-3">
-    <%= link_to image_tag(product.image_url, class: "img-responsive product-img"), product %>
-
-    <h3><%= product.name %></h3>
-    <p><%= product.description.truncate_words(4) %></p>
-    <p><%= product.color %></p>
-              <p><%= number_to_currency(product.price, precision: 0) %></p>
-
-             
-              <% if signed_in? && current_user.admin? %>
-              <p class="edit-links"><%= link_to 'Show', product %>
-              <%= link_to 'Edit', edit_product_path(product) %>
-              <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-              <% end %>
-              
-  </div>             
+<div class="col-sm-1 col-md-3">
+  <%= link_to image_tag(product.image_url, class: "img-responsive product-img"), product %>
+  <h3><%= product.name %></h3>
+  <p class="price"><%= number_to_currency(product.price, precision: 0) %></p>
+  <% if signed_in? && current_user.admin? %>
+    <p class="edit-links"><%= link_to 'Show', product %>
+    <%= link_to 'Edit', edit_product_path(product) %>
+    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    <% end %>              
+</div>             
 

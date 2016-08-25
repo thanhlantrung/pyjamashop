@@ -1,9 +1,8 @@
 <p id="notice"><%= notice %></p>
   
-  <div class= "container product-class">
-  <hr>
+<div class= "container product-class">
+<hr>
   <div class="row" data-product-id="<%= @product.id %>">
-
     <div class="col-md-6 my-p">
       <%= image_tag(@product.image_url, class: "img-responsive product-show img-zoom", data_zoom_image: @product.image_url) %>
     </div>
@@ -26,36 +25,35 @@
             </h4>
           </div>
           <div id="collapse1" class="panel-collapse collapse">
-            <div class="panel-body"><%= render partial: 'comments' %><div class="paginate"><%= will_paginate @comments %></div></div>
-
+            <div class="panel-body">
+              <%= render partial: 'comments' %>
+              <div class="paginate">
+                <%= will_paginate @comments %>
+              </div>
+            </div>
           </div>
-        </div>
-        
+        </div> 
         <div class="panel panel-default">
           <div class="panel-heading" id="write-review">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
               Write Review</a>
             </h4>
-          </div>
-          
+          </div> 
           <div id="collapse2" class="panel-collapse collapse">
             <div class="panel-body"> 
               <%= render partial: 'new_comment' %>
               <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-            </div>
-            
+            </div>       
           </div>
         </div>
       </div><!--end accordion-->
     </div><!-- end col md 6 -->
   </div><!-- end row --> 
 </div><!-- end container -->
-  <hr>
-
-
+<hr>
 <div class="clear"></div>
 <div class="row mtop20">
-  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Edit', edit_product_path(@product) %> 
   <%= link_to 'Back', products_path %>
 </div>
