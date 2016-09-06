@@ -11,7 +11,7 @@ describe UsersController, :type => :controller do
       end
 
       it "loads correct user details" do
-        get :show, id: user.id
+        get :show, params: { id: user.id }
         expect(response).to be_success
         expect(response).to have_http_status(200)
         expect(assigns(:user)).to eq user 
@@ -20,7 +20,7 @@ describe UsersController, :type => :controller do
 
     context "No user is logged in" do
       it "redirects to login" do
-        get :show, id: user.id
+        get :show, params: { id: user.id }
         expect(response).to redirect_to(new_user_session_path)
       end
     end
@@ -31,7 +31,7 @@ describe UsersController, :type => :controller do
       end
 
       it "should block user and redirect to root path" do
-        get :show, id: user.id
+        get :show, params: { id: user.id }
         expect(response).to redirect_to("/")
       end
     end    
@@ -44,12 +44,12 @@ describe UsersController, :type => :controller do
       end
 
       it "should redirect to the user's edit page" do
-        get :edit, id: user_two.id
+        get :show, params: { id: user_two.id }
         expect(response).to have_http_status(200)
       end
 
       it "should block other users from editing pages" do
-        get :edit, id: user.id
+        get :edit, params: { id: user.id }
         expect(response).not_to be_success
         expect(response).to have_http_status(302)
       end
