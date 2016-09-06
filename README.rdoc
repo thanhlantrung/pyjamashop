@@ -1,6 +1,5 @@
 == README
 
-My name is Thanh and this is a testapp so I can learn how to use Ruby and Git.
-
+The Pyjama Shop. Made using Ruby on Rails. 
 
 
