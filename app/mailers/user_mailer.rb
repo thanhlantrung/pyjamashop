@@ -12,4 +12,9 @@ class UserMailer < ApplicationMailer
 		@user = user
 		mail(to: @user.email, subject: 'Welcome to The Pyjama Shop')
 	end
+
+	def order_complete(user, product)
+		@user = user
+		@product = product
+		mail(to: @user.email, subject: 'Thank you for your order!')
 end

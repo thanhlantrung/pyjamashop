@@ -1,6 +1,5 @@
 <div class="review-div">
 	<div class="add-review-div">
-		<h4 class="add-review">Add a review:</h4>
 	</div>
 	<%= form_for([@product, @product.comments.build], remote: true) do |f| %>
 	<p><div class="rating"></div></p>
