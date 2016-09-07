@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  </head>
-  <body>
+<table>
+	<tbody>
     <h1>Thank you <%= @user.first_name %> for your order!</h1>
-    <p>You have ordered: <%= @product.name %> for <%= @product.price %>
+    <p>You have ordered: <%= @product.name %> for <%= number_to_currency(@product.price, precision: 0)%>
     </p>
     <p>
       Your pyjamas will arrive shortly. We hope you enjoy them and thank you for shopping at The Pyjama Shop!
     </p>
+  </tbody>
+</table>
   
-  </body>
