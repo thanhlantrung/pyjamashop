@@ -4,9 +4,11 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Thank you for your order!</h1>
+    <h1>Thank you <%= @user.first_name %> for your order!</h1>
+    <p>You have ordered: <%= @product.name %> for <%= @product.price %>
+    </p>
     <p>
-      Your pyjamas will arrive shortly. We hope you enjoy them!
+      Your pyjamas will arrive shortly. We hope you enjoy them and thank you for shopping at The Pyjama Shop!
     </p>
   
   </body>

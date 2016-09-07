@@ -1,23 +1,24 @@
 class PaymentsController < ApplicationController
  
   def create 
-  	@product = Product.find(params[:product_id])
-  	@user = current_user
   	token = params[:stripeToken]
+    @product = Product.find(params[:product_id])
+  	@user = current_user
+  
     @price = params[:product_price]
 
   	begin
   		charge = Stripe::Charge.create(
-  			# :amount => @product.price
-        :amount => @price.to_i * 100,
+        :amount => (@product.price).to_i * 100,
   			:currency => "usd",
   			:source => token,
   			:description => params[:stripeEmail]
   			)
 
   			if charge.paid
-  				Order.create(product_id: @product_id, user_id: current_user.id, total: @product.price)
+  				Order.create!(product_id: @product_id, user_id: current_user.id, total: @product.price)
           UserMailer.order_complete(@user, @product).deliver_now
+          flash[:success] = "Your order has been processed!"
   			end
 
   	rescue Stripe::CardError => e

@@ -10,8 +10,7 @@
 
 
   <script src="https://checkout.stripe.com/checkout.js"></script>
-  <%= hidden_field_tag 'stripeToken' %>
-  <%= hidden_field_tag 'stripeEmail' %>
+  <%= hidden_field_tag(:product_id, @product.id) %>
   <button id="customButton" class="btn">Buy Now</button>
 
   <script>

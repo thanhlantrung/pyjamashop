@@ -17,4 +17,5 @@ class UserMailer < ApplicationMailer
 		@user = user
 		@product = product
 		mail(to: @user.email, subject: 'Thank you for your order!')
+	end
 end
