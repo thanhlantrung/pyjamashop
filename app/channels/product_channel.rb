@@ -15,12 +15,4 @@ class ProductChannel < ApplicationCable::Channel
   	stream_for data ["product_id"]
   end
 
-  def perform(comment, current_user)
-  product = comment.product
-  average_rating = product.average_rating
-  comments_count = product.comments.count
-
-  ProductChannel.broadcast_to comment.product.id, comment: render_comment(comment, current_user), average_rating: average_rating, comments_count: comments_count
-  end
-
 end
