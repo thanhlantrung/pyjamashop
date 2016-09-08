@@ -2,6 +2,7 @@
   
 <div class= "container product-class">
 <hr>
+  <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
   <div class="row" data-product-id="<%= @product.id %>">
     <div class="col-md-6 my-p">
       <%= image_tag(@product.image_url, class: "img-responsive product-show img-zoom", data_zoom_image: @product.image_url) %>
@@ -43,7 +44,6 @@
           <div id="collapse2" class="panel-collapse collapse">
             <div class="panel-body"> 
               <%= render partial: 'new_comment' %>
-              <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
             </div>       
           </div>
         </div>
